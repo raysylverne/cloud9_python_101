@@ -9,3 +9,14 @@ print("Middle character:", message[int(len(message) /2)])
 print("Even index characters:", message[0::2])
 print("Odd index characters:", message[1::2])
 print("Reversed message:", message[::-1])
+
+# Expected Output
+'''
+Enter a message: Test Message
+First character: T
+Last character: e
+Middle character: e
+Even index characters: Ts esg
+Odd index characters: etMsae
+Reversed message: egasseM tseT
+'''
