@@ -27,7 +27,7 @@ print("Top 5 Used AWS Service: ")
 print(aws_services)
 print("Total # of most used services: ", len(aws_services))
 
-# Bonus How to srt a list 
+# Bonus How to sort a list 
 # sorted(aws_services)
 
 
