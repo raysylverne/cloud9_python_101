@@ -21,17 +21,23 @@ assert split_name("Victor Von Doom") == {
 
 # 3) Write an `is_palindrome` function to check if a string is a palindrome (reads the same from left-to-right and right-to-left)
 def is_palindrome(item):
+    item = str(item)
     return item == item[::-1]
 
 assert is_palindrome("radar") == True, f"Expected True but got {is_palindrome('radar')}"
 assert is_palindrome("stop") == False, f"Expected False but got {is_palindrome('stop')}"
 
-# 4) Make `is_palindrome` work with numbers
+# 4) Make `is_palindrome` work with number
 
 assert is_palindrome(101) == True, f"Expected True but got {is_palindrome(101)}"
 assert is_palindrome(10) == False, f"Expected False but got {is_palindrome(10)}"
 
 # 5) Write a `build_list` function that takes an item and a number to include in a list
+def build_list(item, count=1):
+    items = []
+    for _ in range(count):
+        items.append(item)
+    return items
 
 assert build_list("Apple", 3) == [
     "Apple",
