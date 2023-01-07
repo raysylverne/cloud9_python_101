@@ -13,7 +13,6 @@ Print the square of each number on a separate line.
 
 
 n = int(input("Provide a number: "))
-
 num_list = []
 for i in range(0, n): # (0, 1, 2, 3,4)     4 == n-1
         num_list.append(i ** 2) # Using ** to get the square of each number that is in the r
@@ -22,13 +21,15 @@ for i in num_list:
     print(i)
 
 '''
-Changing out n for s I've decided to use list comprehension to shortent the 
-syntax needed to get the same output. Doing is this way removes the need to append
+Note that I changed out n for s
+I've decided to use list comprehension to shortent the syntax needed to get the same output. 
+The append is no longer needed 
+The iteration of user input along with squared operation is done 1 instead of 2 lines
+Easier to read and looks cleaner
 '''
 
 s = int(input("Provide a number: "))
 squared_nums = [i ** 2 for i in range(0, s)]
-
 for i in squared_nums:    
     print(i)
 # n is taken in as input 5 [0,1,2,3,4]
